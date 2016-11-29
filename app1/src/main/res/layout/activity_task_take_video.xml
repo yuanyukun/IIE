@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_bg"
+    android:paddingTop="@dimen/height_20dp"
+    android:paddingBottom="@dimen/height_20dp"
+    tools:context=".task.TaskSendPhotoActivity">
+    <EditText
+        android:id="@+id/send_photo_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_100dp"
+        android:paddingRight="@dimen/height_20dp"
+        android:background="@null"
+        android:paddingLeft="@dimen/width_25dp"
+        android:paddingTop="@dimen/height_5dp"
+        android:hint="对伞主说...(140字以内)"
+        android:gravity="left"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="140"
+        android:textSize="14sp"
+        android:textColor="@color/color_e64"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/height_5dp"
+        android:paddingRight="@dimen/height_10dp"/>
+    <FrameLayout
+        android:layout_marginLeft="@dimen/height_10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:contentDescription="@null"
+            android:id="@+id/plus_video_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@mipmap/plus_512"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/play_video_view"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <VideoView
+                android:id="@+id/show_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <LinearLayout
+                android:layout_marginTop="@dimen/height_10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:weightSum="1"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:contentDescription="@null"
+                    android:src="@mipmap/sound_min_48"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <SeekBar
+                    android:id="@+id/sound_seek"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/height_5dp"
+                    android:layout_marginRight="5dp"/>
+                <ImageView
+                    android:contentDescription="@null"
+                    android:src="@mipmap/sound_max_48"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

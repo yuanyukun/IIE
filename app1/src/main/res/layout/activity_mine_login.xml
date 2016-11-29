@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:padding="@dimen/height_20dp"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/login_weixin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="#00D10D">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@mipmap/icon64_appwx_logo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信登陆"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/height_20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/height_48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+            <View android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="或者"
+                android:paddingLeft="@dimen/height_10dp"
+                android:paddingRight="@dimen/height_10dp"
+                android:textColor="@color/white"/>
+            <View android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/white"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/login_user_name"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp"
+            android:background="@drawable/linearlayout_shape_white_corner_5"
+            android:paddingLeft="@dimen/height_10dp"
+            android:paddingRight="@dimen/height_10dp"
+            android:hint="用户名/邮箱地址"/>
+        <EditText
+            android:id="@+id/login_user_password"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp"
+            android:background="@drawable/linearlayout_shape_white_corner_5"
+            android:paddingLeft="@dimen/height_10dp"
+            android:paddingRight="@dimen/height_10dp"
+            android:inputType="textPassword"
+            android:hint="密码"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/height_20dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="注册只需15秒"
+                android:paddingLeft="@dimen/height_5dp"
+                android:paddingRight="@dimen/height_5dp"
+                android:background="@drawable/selector_linearlayout_dark_yellow_grey"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="登录"
+                android:layout_marginLeft="@dimen/height_10dp"
+                android:background="@drawable/selector_linearlayout_blue_grey"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_forget_pwd"
+            android:layout_marginTop="@dimen/height_20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码？"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+    <!--&lt;!&ndash; ======================登录按钮=================== &ndash;&gt;
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fefefe" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp" >
+
+        <LinearLayout
+            android:id="@+id/wechatLogin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:background="#E2E2E2"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:src="@mipmap/icon64_appwx_logo" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:background="#E2E2E2"
+                android:text="微信登陆"
+                android:clickable="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/facebookLogin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#E2E2E2"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:src="@mipmap/facebook1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="1dp"
+                android:background="#E2E2E2"
+                android:text="facebook登录"
+                android:clickable="false"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+-->
+</RelativeLayout>

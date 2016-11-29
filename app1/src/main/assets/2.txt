@@ -1,0 +1,24 @@
+{
+    "list":[
+        {
+            "personalName":"伞来了",
+            "createTime":"2016-05-18T15:49:06.393",
+            "personalHead":"20160407113328_fe48f081-f5d9-4123-803f-99e57790e94e.png",
+            "messageContent":"Ghh",
+            "personalId":1,
+            "hasNewMessage":false,
+            "canDelete":true,
+            "personalType":10
+        },
+        {
+            "personalName":"公众号1",
+            "createTime":"2016-05-11T16:40:00.343",
+            "personalHead":"20160407112242_b4314cfb-6ce0-48f0-b468-e5a15f9446f0.jpg",
+            "messageContent":"asdf",
+            "personalId":2,
+            "hasNewMessage":false,
+            "canDelete":true,
+            "personalType":10
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Parachute</string>
+    <string name="title_activity_login">Activity_Login</string>
+    <string name="title_activity_mine">Activity_Mine</string>
+    <string name="title_activity_mine_parachute">Activity_Mine_Parachute</string>
+    <string name="title_activity_mine_receive_task">Activity_Mine_Receive_Task</string>
+    <string name="title_activity_mine_publish_task">Activity_Mine_Publish_Task</string>
+    <string name="title_activity_mine_publish_task_list">Activity_Mine_Publish_Task_List</string>
+    <string name="title_activity_setting">Activity_Setting</string>
+    <string name="title_activity_throw_in_parachute">Activity_Throw_In_Parachute</string>
+    <string name="title_activity_take_order">Activity_Take_Order</string>
+    <string name="title_activity_take_orders">Activity_Take_Orders</string>
+    <string name="title_activity_pick_num">Activity_Pick_Num</string>
+    <string name="title_activity_pay">Activity_Pay</string>
+
+
+
+
+
+
+
+    <string name="activity_main_release_task_text">发布任务</string>
+    <string name="activity_main_title_text">Parachute</string>
+    <string name="activity_main_exit_text">再按一次退出程序</string>
+    <!-- 版本更新 -->
+    <string name="latest_version_title">发现新版本(%1$s)</string>
+    <string name="update_latest_version_title">最新版本(%1$s), 更新&#8230;</string>
+    <string name="download_failure">现在最新版本失败 !</string>
+    <string name="later_update_tip">更新&#8230; (请在开启wifi的时候更新)</string>
+    <string name="is_latest_version_label">您的APP是最新版本</string>
+    <!-- 登陆页面 -->
+    <string name="activity_mine_login_close_title">关闭</string>
+    <string name="activity_mine_title">登陆</string>
+    <string name="activity_mine_register_title">注册</string>
+    <string name="activity_mine_username_hint">用户名/邮箱地址</string>
+    <string name="activity_mine_password_hint">密码</string>
+    <string name="activity_mine_forget_password">忘记密码？</string>
+    <string name="activity_mine_weixin_login">微信登陆</string>
+    <string name="activity_mine_facebook_login">Facebook登录</string>
+
+    <!-- 上传照片 -->
+    <string name="takepicture">拍照</string>
+    <string name="take_from_album">从相册中选取</string>
+    <string name="cancle">取消</string>
+    <string name="camera_unavailable">相机不可用</string>
+
+    <!--我的页面-->
+    <string name="go_back">返回</string>
+    <string name="mine_title">我的</string>
+    <string name="mine_orders">订单</string>
+    <string name="mine_account">我的账户</string>
+    <string name="mine_message">用户消息</string>
+    <string name="mine_feedback">意见反馈</string>
+    <string name="mine_info">个人信息</string>
+    <string name="mine_log_out">退出登录</string>
+
+
+</resources>

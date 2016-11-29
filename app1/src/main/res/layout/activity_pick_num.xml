@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/linearlayout_popupwindow"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="horizontal">
+
+        <com.horem.parachute.util.PickerView
+            android:id="@+id/num_pickerview"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/confirm_action"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_circle"
+            android:text="@string/confirm_str" />
+    </RelativeLayout>
+
+</RelativeLayout>

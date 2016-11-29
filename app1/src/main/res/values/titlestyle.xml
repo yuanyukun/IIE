@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="titlestyle" parent="AppBaseTheme">
+        <item name="android:windowTitleSize">48dp</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowActionBar" tools:targetApi="honeycomb" tools:ignore="NewApi">false</item>
+        <!-- <item name="android:windowFullscreen">true</item> -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+   		<item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

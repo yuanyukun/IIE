@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical">
+    <include layout="@layout/mine_titlebar"/>
+
+    <com.amap.api.maps.TextureMapView
+        android:id="@+id/location_mapview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tmp_title" />
+    <LinearLayout
+        android:id="@+id/test_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>

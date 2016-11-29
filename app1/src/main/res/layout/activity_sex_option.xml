@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_bg"
+    tools:context="com.horem.parachute.mine.SettingDownLoadOptions">
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/height_20dp"-->
+        <!--android:layout_marginTop="@dimen/height_48dp"-->
+        <!--android:text="您的性别是：" />-->
+    <!--<View style="@style/divider_line_horizontal" android:layout_marginTop="@dimen/height_10dp"/>-->
+    <LinearLayout
+        android:id="@+id/option_male"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:background="@color/white"
+        android:onClick="onMaleClicked"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/height_20dp"
+            android:text="男"/>
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/check_48"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/height_20dp"/>
+    </LinearLayout>
+    <View style="@style/divider_line_horizontal" android:layout_marginLeft="@dimen/height_20dp"/>
+    <LinearLayout
+        android:id="@+id/option_female"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:background="@color/white"
+        android:onClick="onFemaleClicked"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/height_20dp"
+            android:text="女"/>
+        <ImageView
+            android:id="@+id/image_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/check_48"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/height_20dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.horem.parachute.customview.HackyViewPager
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewpager_show_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+</com.horem.parachute.customview.HackyViewPager>

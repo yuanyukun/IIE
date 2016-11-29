@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:contentDescription="@null"
+        android:layout_marginTop="@dimen/height_48dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/diamond_256"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的零钱"
+        android:layout_marginTop="@dimen/height_20dp"/>
+    <TextView
+        android:id="@+id/tv_my_chanage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/height_10dp"/>
+    <Button
+        android:id="@+id/my_change_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:layout_marginLeft="@dimen/height_20dp"
+        android:layout_marginRight="@dimen/height_20dp"
+        android:layout_marginTop="@dimen/height_20dp"
+        android:text="提现"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_linearlayout_green_grey"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_20dp"
+        android:paddingLeft="@dimen/height_20dp"
+        android:text="零钱说明:"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/height_20dp"
+        android:layout_marginTop="@dimen/height_5dp"
+        android:text="1.零钱作为伞来了的虚拟货币进行流通"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/height_20dp"
+        android:text="2.零钱可以提现，也可用于支付投放任务费用"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/height_20dp"
+        android:text="3.最低提现金额为1元，微信支付提现需绑定微信账号"/>
+
+
+</LinearLayout>

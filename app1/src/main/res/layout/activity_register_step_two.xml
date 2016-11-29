@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/height_20dp"
+    android:paddingRight="@dimen/height_20dp"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    tools:context="com.horem.parachute.login.StartRegisterActivity">
+    <TextView
+        android:layout_marginTop="@dimen/height_60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="你的注册密码？"/>
+    <EditText
+        android:layout_marginTop="@dimen/height_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:textSize="14sp"
+        android:paddingLeft="@dimen/height_5dp"
+        android:paddingRight="@dimen/height_5dp"
+        android:background="@drawable/linearlayout_shape_white_corner_5" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/height_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/color_green" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/color_green"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingRight="@dimen/height_10dp"
+        android:text="2/3"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/height_5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/return_btn"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="上一步"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/height_10dp"
+            android:background="@drawable/linearlayout_shape_dark_yellow_corner_5"/>
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_marginTop="@dimen/height_10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/height_10dp"
+            android:background="@drawable/linearlayout_shape_blue_corner_5"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

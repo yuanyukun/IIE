@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:background="@color/backGround"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@android:color/white">
+    </LinearLayout>
+
+    <View style="@style/indivdualLine"/>
+    <View style="@style/divdualBlock"/>
+    <View style="@style/indivdualLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            tools:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            style="@style/commonText"
+            tools:text="姓名"
+            android:id="@+id/textView"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView style="@style/commonText"
+            tools:text="988"/>
+        <TextView
+            style="@style/commonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            tools:text="剩余课时"/>
+        <TextView
+            style="@style/commonText"
+            tools:text="12"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+    <View style="@style/indivdualLine"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                style="@style/commonText"
+                android:text="月排行"
+                android:textSize="12sp"/>
+            <TextView
+                style="@style/commonText"
+                android:text="3"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/colorPrimary"/>
+            <View style="@style/indivdualLineVertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                style="@style/commonText"
+                android:text="月排行"
+                android:textSize="12sp"/>
+            <TextView
+                style="@style/commonText"
+                android:text="3"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"/>
+            <View style="@style/indivdualLineVertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                style="@style/commonText"
+                android:text="月排行"
+                android:textSize="12sp"/>
+            <TextView
+                style="@style/commonText"
+                android:text="3"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary"/>
+            <View style="@style/indivdualLineVertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View style="@style/indivdualLine"/>
+    <View style="@style/divdualBlock"/>
+    <View style="@style/indivdualLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@android:color/white">
+
+    </LinearLayout>
+
+    <View style="@style/indivdualLine"/>
+    <View style="@style/divdualBlock"/>
+    <View style="@style/indivdualLine"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@android:color/white">
+
+    </LinearLayout>
+</LinearLayout>

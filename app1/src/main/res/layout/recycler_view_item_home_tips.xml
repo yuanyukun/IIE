@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_tips_swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+    <FrameLayout
+        android:id="@+id/home_tips_delete_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_60dp"
+        android:background="#ffcc0000">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:text="Delete"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/home_tips_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="test"
+                    android:textColor="@color/addressColor"
+                    android:paddingLeft="@dimen/height_20dp"
+                    android:paddingRight="@dimen/height_20dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp" />
+
+            <View style="@style/divider_line_horizontal"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

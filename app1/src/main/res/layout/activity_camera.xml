@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical"
+    tools:context=".task.CameraActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/preview_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:progressDrawable="@drawable/myprogresscolor"
+        android:id="@+id/recording_progress_show"
+        android:max="600" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/start_record_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="点击拍"
+            android:textSize="16sp"
+            android:background="@drawable/buttton_blue_stroke"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/height_20dp"
+            android:textColor="@color/material_blue"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@mipmap/ic_launcher"
+        android:id="@+id/imageView" />
+    <View style="@style/indivdualLine"/>
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:paddingLeft="20dp"
+        android:hint="请输入用户名"/>
+    <View style="@style/indivdualLine"/>
+
+    <View style="@style/indivdualLine"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="20dp"
+        android:background="@null"
+        android:hint="请输入密码"/>
+    <View style="@style/indivdualLine"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorPrimary"
+        android:text="登录"
+        android:textSize="18sp"
+        android:onClick="onLogin"
+        android:textColor="@android:color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有帐号"
+            android:textColor="@color/colorPrimaryDark"
+            android:onClick="noAccount"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="忘记密码？"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.horem.parachute.task.PointTaskLocationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:gravity="center"
+        android:background="@color/grey_bg">
+         <SearchView
+           android:id="@+id/point_location_edit"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/width_40dp"
+           android:layout_gravity="center_vertical"
+           android:background="@drawable/grey_stroke_white_bg_corner_shape"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+        <com.amap.api.maps.MapView
+            android:id="@+id/point_location_mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/height_60dp"
+            android:layout_height="@dimen/height_60dp"
+            android:src="@mipmap/red_parachute_1_100"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    tools:context="com.horem.parachute.mine.SettingAboutParachute">
+    <ImageView
+        android:id="@+id/mark"
+        android:layout_marginTop="62dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@null"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/logo_120"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/parachute_versioncode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/height_5dp"
+        android:layout_below="@+id/mark"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/height_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parachute_versioncode"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/about_parachute_contracts"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="用户服务协议"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/arrow" />
+    </LinearLayout>
+        <View
+            style="@style/divider_line_horizontal"
+            android:layout_marginLeft="@dimen/height_20dp"/>
+    <LinearLayout
+        android:id="@+id/about_parachute_use"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="操作指引"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/arrow" />
+    </LinearLayout>
+        <View
+            style="@style/divider_line_horizontal"
+            android:layout_marginLeft="@dimen/height_20dp"/>
+    <LinearLayout
+        android:id="@+id/about_parachute_share"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="推荐给朋友"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/arrow" />
+    </LinearLayout>
+        <View
+            style="@style/divider_line_horizontal"
+            android:layout_marginLeft="@dimen/height_20dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/mark2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_grey"
+        android:text="Copyright 2016 Horem. All Rights Reserved."
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/height_60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_grey"
+        android:layout_above="@+id/mark2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/height_5dp"
+        android:text="广州诚卓企业管理咨询有限公司 版权所有"/>
+
+</RelativeLayout>

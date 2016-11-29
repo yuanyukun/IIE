@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.horem.parachute.balloon.SendFlowersActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_imageview_send_flowers_user_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/circle_dark"
+        android:layout_marginTop="30dp"/>
+
+
+    <com.horem.parachute.customview.GetFlowerNum
+        android:layout_marginTop="@dimen/height_20dp"
+        android:id="@+id/custom_flower_num"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/height_20dp"
+        android:layout_marginRight="@dimen/height_20dp"
+        android:layout_height="48dp"/>
+    <TextView
+        android:id="@+id/tv_send_balloon_flower_price"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:text="￥1.00/朵"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginRight="@dimen/height_20dp"/>
+    <Button
+        android:textColor="@color/white"
+        android:text="支付"
+        android:onClick="onPay"
+        android:layout_marginLeft="@dimen/height_20dp"
+        android:layout_marginRight="@dimen/height_20dp"
+        android:id="@+id/btn_send_flowers_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:background="@drawable/selector_linearlayout_green_grey"
+        android:layout_marginBottom="@dimen/height_20dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_send_flowers_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_bg"
+        android:paddingTop="@dimen/height_10dp"/>
+</LinearLayout>

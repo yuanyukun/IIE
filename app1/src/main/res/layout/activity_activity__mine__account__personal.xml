@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    tools:context=".mine.Activity_Mine_Modify">
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/modify_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="你希望的用户名是？"
+        android:layout_marginLeft="@dimen/height_20dp"
+        android:layout_marginTop="@dimen/height_20dp"/>
+    <EditText
+        android:id="@+id/person_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_40dp"
+        android:focusable="true"
+        android:paddingLeft="@dimen/height_5dp"
+        android:layout_below="@+id/modify_tips"
+        android:background="@drawable/edit_style_normal"
+        android:layout_alignLeft="@+id/modify_tips"
+        android:layout_marginRight="20dp" />
+    <!--android:cursorVisible="false"-->
+</RelativeLayout>

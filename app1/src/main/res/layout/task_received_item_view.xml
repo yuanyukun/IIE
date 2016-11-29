@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/height_10dp">
+
+
+    <!-- 接收到的图片或视频 -->
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/height_10dp"
+        android:id="@+id/task_received_imglist_container_mine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/task_type_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <View style="@style/divider_line_horizontal" />
+    <LinearLayout
+        android:id="@+id/task_received_status_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/task_send_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收到1份照片"
+            android:visibility="invisible"
+            android:textColor="@color/material_blue"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_10dp"
+        android:background="@null"/>
+</LinearLayout>

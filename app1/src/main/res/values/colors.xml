@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lightRed">#FFDFE0</color>
+    <color name="lightBlue">#E0FFDF</color>
+    <color name="addressColor">#586e93</color>
+
+    <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <color name="text_grey">#666666</color>
+    <color name="white">#ffffff</color>
+    <color name="grey_bg">#EFEFEF</color>
+    <color name="red_login">#FF0000</color>
+    <!-- 登陆页面的颜色设置 -->
+    <color name="mine_login_background">#fefefe</color>
+    <color name="background_color_header">#F7F7F7</color>
+    <color name="image_divide_color">#C8C8C8</color>
+    <color name="divide_color_c8c8c8">#C8C8C8</color>
+    <color name="uploadimage_background_color">#EFEFF4</color>
+    <color name="seleced_color">#cccccc</color>
+    c
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+    //
+    <color name="color_ff">#ffffffff</color>
+    <color name="color_e43">#ffe43601</color>
+    <color name="color_999">#ff999999</color>
+    <color name="color_333">#ff333333</color>
+    <color name="color_e6">#ffe6e6e6</color>
+    <color name="color_da">#dadada</color>
+    <color name="color_e64">#E64346</color>
+    <color name="color_666">#666666</color>
+    <color name="color_green">#00D10D</color>
+
+
+</resources>

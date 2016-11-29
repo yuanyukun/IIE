@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="65.32999dip"
+    android:layout_alignParentBottom="true"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52.0dip"
+        android:layout_gravity="bottom"
+        android:background="@drawable/tab_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:id="@+id/frame_home_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/tab_home_click"
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="5.0dip"
+                 android:src="@mipmap/tab_parachute1_75"/>
+
+            <TextView
+                android:id="@+id/tab_home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="2.0dip"
+                android:text="首页"
+                android:textColor="@color/text_grey"
+                android:textSize="10.0dip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_nearby_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/tab_nearby"
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="5.0dip"
+                 android:src="@mipmap/tab_map1_75"/>
+
+            <TextView
+                android:id="@+id/tab_nearby_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="2.0dip"
+                android:text="附近"
+                android:textSize="10.0dip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <FrameLayout
+            android:id="@+id/frame_discovery"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/img_discovery"
+                android:layout_width="27.0dip"
+                android:layout_height="27.0dip"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="5.0dip"
+                android:src="@mipmap/tab_discovery1_75" />
+
+            <TextView
+                android:id="@+id/tv_discovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="2.0dip"
+                android:text="发现"
+                android:textSize="10.0dip" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_user_info"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/img_user_info"
+                android:layout_width="27.0dip"
+                android:layout_height="27.0dip"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="5.0dip"
+                 android:src="@mipmap/tab_me1_75"/>
+
+            <TextView
+                android:id="@+id/tv_user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="2.0dip"
+                android:text="我"
+                android:textSize="10.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_circle_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:layout_width="66.666595dip"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/tab_camera_100" />
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,155 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_bg"
+    android:orientation="vertical">
+
+    <com.horem.parachute.customview.PullDownScrollView
+        android:id="@+id/discover_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="0dp">
+        <com.horem.parachute.customview.MyNearScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingBottom="0dp">
+        <LinearLayout
+            android:id="@+id/main_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/banner_splash_pager"
+                android:layout_height="120dp"
+                android:layout_width="match_parent"
+                app:canLoop="true"/>
+
+            <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/fragment_discover_theme_grid"
+            android:layout_marginTop="@dimen/height_5dp"
+            android:layout_marginRight="@dimen/height_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:id="@+id/fragment_discover_theme_rl"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/height_48dp">
+            <View
+                style="@style/divider_line_horizontal"
+                android:layout_alignParentTop="true"/>
+            <View
+                style="@style/divider_line_horizontal"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                android:text="更多主题"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/width_10dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_10dp"
+            android:background="@color/grey_bg"/>
+        <View
+            style="@style/divider_line_horizontal"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_discover_balloon_grid"
+            android:layout_marginTop="@dimen/height_5dp"
+            android:layout_marginRight="@dimen/height_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/fragment_discover_ballon_rl"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="@dimen/height_48dp">
+            <View
+                style="@style/divider_line_horizontal"
+                android:layout_alignParentTop="true"/>
+            <View
+                style="@style/divider_line_horizontal"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerInParent="true"
+                android:text="更多推荐"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/width_10dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_10dp"
+            android:background="@color/grey_bg"/>
+        <View
+            style="@style/divider_line_horizontal"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_discover_video_grid"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/height_5dp"
+            android:layout_marginRight="@dimen/height_5dp"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:id="@+id/fragment_discover__video_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_48dp">
+            <View
+                style="@style/divider_line_horizontal"
+                android:layout_alignParentTop="true"/>
+            <View
+                style="@style/divider_line_horizontal"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:background="@color/white"
+                android:layout_centerInParent="true"
+                android:text="更多热门视频"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/height_10dp"/>
+            </RelativeLayout>
+         </LinearLayout>
+    </com.horem.parachute.customview.MyNearScrollView>
+</com.horem.parachute.customview.PullDownScrollView>
+
+    <include layout="@layout/mine_titlebar"/>
+
+</LinearLayout>

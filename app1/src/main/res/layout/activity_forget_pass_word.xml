@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/height_20dp"
+    android:paddingRight="@dimen/height_20dp"
+    android:orientation="vertical"
+    android:background="@mipmap/background"
+    tools:context="com.horem.parachute.login.StartRegisterActivity">
+    <EditText
+        android:id="@+id/forget_pwd_email_edit"
+        android:layout_marginTop="@dimen/height_60dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:textSize="14sp"
+        android:paddingLeft="@dimen/height_5dp"
+        android:paddingRight="@dimen/height_5dp"
+        android:background="@drawable/linearlayout_shape_white_corner_5"
+        android:hint="请填写注册的邮箱地址"/>
+
+    <Button
+        android:id="@+id/forget_pwd_send_email_btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_48dp"
+        android:text="邮件找回"
+        android:textColor="@color/white"
+        android:background="@drawable/linearlayout_shape_blue_corner_5"/>
+</LinearLayout>

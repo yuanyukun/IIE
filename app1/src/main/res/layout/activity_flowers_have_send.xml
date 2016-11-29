@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jcodecraeer.xrecyclerview.XRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recycler_user_info_flowers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    tools:context="com.horem.parachute.balloon.FlowersHaveSendActivity">
+
+</com.jcodecraeer.xrecyclerview.XRecyclerView>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/backGround"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <View style="@style/indivdualLine"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/imageView2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/fragment_mine_username"
+                style="@style/commonText"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="姓名"/>
+            <ImageView
+                android:layout_toRightOf="@+id/fragment_mine_username"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/fragment_mine_age"
+                style="@style/commonText"
+                android:text="4岁"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/fragment_mine_username"/>
+            <TextView
+                style="@style/commonText"
+                android:text="班级名称"
+                android:layout_toRightOf="@+id/fragment_mine_age"
+                android:layout_alignBottom="@+id/fragment_mine_age"
+                android:layout_marginLeft="30dp"/>
+            <ImageView
+                android:id="@+id/record_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/fragment_mine_age"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:id="@+id/fragment_mine_total_record"
+                style="@style/commonText"
+                android:layout_toRightOf="@+id/record_icon"
+                android:layout_height="30dp"
+                android:text="988"
+                android:gravity="center"
+                android:layout_alignBottom="@+id/record_icon"/>
+            <ImageView
+                android:id="@+id/fragment_mine_available_record_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/fragment_mine_total_record"
+                android:layout_alignBottom="@id/fragment_mine_total_record"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/fragment_mine_available_record"
+                style="@style/commonText"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/fragment_mine_available_record_icon"
+                android:text="688"
+                android:layout_alignBottom="@+id/fragment_mine_total_record"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@color/colorPrimary"
+                android:text="兑换积分"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/white"
+                android:layout_toRightOf="@+id/fragment_mine_available_record"
+                android:layout_alignBottom="@+id/fragment_mine_available_record_icon"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/fragment_mine_rank_icon"
+                style="@style/commonText"
+                android:text="月排行"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                style="@style/commonText"
+                android:text="3"
+                android:layout_weight="1"
+                android:layout_toRightOf="@+id/fragment_mine_rank_icon"
+                android:layout_alignBottom="@+id/fragment_mine_rank_icon"
+                android:textColor="@color/colorPrimary"/>
+            <View style="@style/indivdualLineVertical"
+                android:layout_alignParentRight="true"/>
+            <ImageView
+                android:id="@+id/fragment_mine_rank_record"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/fragment_mine_rank_icon"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                style="@style/commonText"
+                android:text="688"
+                android:layout_toRightOf="@+id/fragment_mine_rank_record"
+                android:layout_alignBottom="@+id/fragment_mine_rank_record"
+                android:layout_height="30dp"
+                android:gravity="center"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/fragment_mine_season_rank_icon"
+                style="@style/commonText"
+                android:text="学期排行"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                style="@style/commonText"
+                android:text="3"
+                android:layout_weight="1"
+                android:layout_toRightOf="@+id/fragment_mine_season_rank_icon"
+                android:layout_alignBottom="@+id/fragment_mine_season_rank_icon"
+                android:textColor="@color/colorPrimary"/>
+            <View style="@style/indivdualLineVertical"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/fragment_mine_season_rank_record"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/fragment_mine_season_rank_icon"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                style="@style/commonText"
+                android:text="688"
+                android:layout_toRightOf="@+id/fragment_mine_season_rank_record"
+                android:layout_alignBottom="@+id/fragment_mine_season_rank_record"
+                android:layout_height="30dp"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/fragment_mine_finally_rank_icon"
+                style="@style/commonText"
+                android:text="总排行"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                style="@style/commonText"
+                android:text="3"
+                android:layout_weight="1"
+                android:layout_toRightOf="@+id/fragment_mine_finally_rank_icon"
+                android:layout_alignBottom="@+id/fragment_mine_finally_rank_icon"
+                android:textColor="@color/colorPrimary"/>
+            <View style="@style/indivdualLineVertical"
+                android:layout_alignParentRight="true"/>
+            <ImageView
+                android:id="@+id/fragment_mine__finally_rank_record"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/fragment_mine_finally_rank_icon"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                style="@style/commonText"
+                android:text="688"
+                android:layout_toRightOf="@+id/fragment_mine__finally_rank_record"
+                android:layout_alignBottom="@+id/fragment_mine__finally_rank_record"
+                android:layout_height="30dp"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View style="@style/indivdualLine"/>
+    <View style="@style/divdualBlock"/>
+    <View style="@style/indivdualLine"/>
+    <cn.papaxiong.iie.ui.widget.InfoItem
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:leftDrawable="@mipmap/ic_launcher"
+        app:tvRightStr="33"
+        app:tvInfoStr="班级社区"/>
+    <View style="@style/indivdualLine"/>
+    <cn.papaxiong.iie.ui.widget.InfoItem
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:leftDrawable="@mipmap/ic_launcher"
+        app:tvRightStr="33"
+        app:tvInfoStr="班级社区"/>
+    <View style="@style/indivdualLine"/>
+    <cn.papaxiong.iie.ui.widget.InfoItem
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:leftDrawable="@mipmap/ic_launcher"
+        app:tvRightStr="33"
+        app:tvInfoStr="班级社区"/>
+    <View style="@style/indivdualLine"/>
+    <View style="@style/divdualBlock"/>
+    <View style="@style/indivdualLine"/>
+    <cn.papaxiong.iie.ui.widget.InfoItem
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:leftDrawable="@mipmap/ic_launcher"
+        app:tvRightStr="33"
+        app:tvInfoStr="班级社区"/>
+
+    <View style="@style/indivdualLine"/>
+    <cn.papaxiong.iie.ui.widget.InfoItem
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:leftDrawable="@mipmap/ic_launcher"
+        app:tvRightStr="33"
+        app:tvInfoStr="班级社区"/>
+    <View style="@style/indivdualLine"/>
+    <View style="@style/divdualBlock"/>
+    <View style="@style/indivdualLine"/>
+    <cn.papaxiong.iie.ui.widget.InfoItem
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:leftDrawable="@mipmap/ic_launcher"
+        app:tvRightStr="33"
+        app:tvInfoStr="班级社区"
+        app:tvBackground="@android:color/holo_red_light"/>
+    <View style="@style/indivdualLine"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/holo_red_dark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="注销"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
